@@ -1,0 +1,215 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Sevices</title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="/"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" alt="no image" width="150px"></a>    
+        </div>
+        <div class="nav_side">
+            <a href="/about">About Us</a>
+            <a href="/services">Services</a>
+            <a href="#">Blogs</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login/Register</a>
+            
+        </div>
+
+    </nav>
+
+    <div class="product" style="padding: 100px;">
+        <h2>OUR PRODUCTS</h2>
+        <div class="product_container" style="padding-bottom:50px ;">
+            <div class="item">
+                <div class="item_img">
+                    <img src="{% static 'pexels-pixabay-276566.jpg' %}" alt="no image" >
+                </div>
+                <div class="item_content">
+                    <h3>SOFA</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="{% static 'ignacio-r-cd8wgINZPYc-unsplash.jpg' %}" alt="no image"  >
+                </div>
+                <div class="item_content">
+                    <h3>CHAIR</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="{% static 'bed.jpg' %}" alt="no image" >
+                </div>
+                <div class="item_content">
+                    <h3>SOFA</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="product_container" style="padding-bottom:50px ;">
+            <div class="item">
+                <div class="item_img">
+                    <img src="https://www.shutterstock.com/image-photo/stylish-room-interior-sleeper-sofa-600w-2092315348.jpg" alt="no image" >
+                </div>
+                <div class="item_content">
+                    <h3>SOFA BED</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="https://as2.ftcdn.net/v2/jpg/05/01/99/81/1000_F_501998108_ixiz9XDcSDh0X8BctdjcCRcXQrQvV8hs.jpg" alt="no image"  >
+                </div>
+                <div class="item_content">
+                    <h3>Kitchen Cupboard</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="https://th.bing.com/th/id/OIP.sMADF0B4mPidyKBQk4EEnQHaI4?w=736&h=882&rs=1&pid=ImgDetMain" alt="no image" >
+                </div>
+                <div class="item_content">
+                    <h3>Cupboard</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product_container" style="padding-bottom:50px ;">
+            <div class="item">
+                <div class="item_img">
+                    <img src="https://wakefitdev.gumlet.io/img/wardrobes/r1/WWRB4DH1ORGANZAPCWR1/1.jpg?w=900" alt="no image" >
+                </div>
+                <div class="item_content">
+                    <h3>Wardrobe</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="https://www.shutterstock.com/image-photo/books-lamp-on-rustic-cupboard-600w-786280387.jpg" alt="no image"  >
+                </div>
+                <div class="item_content">
+                    <h3>table</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="https://www.shutterstock.com/image-illustration/interior-dining-area-3d-illustration-600w-1929216371.jpg" alt="no image" >
+                </div>
+                <div class="item_content">
+                    <h3>Dining Table</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eius.</p>
+                    <a href="#">BUY NOW</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+    
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name ="submit_sheet"  method="post" >
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email Id"><br>
+                <input type="number" name="Phone Number" placeholder="Phone No."><br>
+                <textarea name="Review" placeholder="Write Your Review" cols="22" rows="5"></textarea><br>
+                <button type="submit">Submit</button>
+                <button type="reset" >Reset</button>
+            </form>
+        </div>
+        </div>
+
+    <footer>
+        <div class="footer_logo">
+            <a href="e-commerce.html"><img src="https://student.1stop.ai/static/media/logo.92dd8b76845bc064a7ab.png" alt="no image" width="150px"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="#">About Us</a>|
+            <a href="#">Blogs</a>|
+            <a href="#">Login</a>|
+            <a href="#">Sign Up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms Of Use</a>|
+            <a href="#">Refund Policy</a>
+        </div>
+        <div class="social" >
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>          
+        </div>
+        <div class="contact">
+            <h3>Contact US</h3>
+            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <hr>
+
+        <p>Copyright &copy; 2021 1stop.All rights reserved </p>
+        
+    </footer>
+
+
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtvPUgZfBE-gWNt0UDMNzC-sj2xq7cQUjSd25RGh0__jkZy7mJvkRwHZ0Yc_-w5fIs/exec'
+    
+    const form = document.forms['submit_sheet']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+         .then(response => alert('Success!'))
+         .catch(error => alert('Error!', error.message))
+         })
+ </script>
+</body>
+</html>

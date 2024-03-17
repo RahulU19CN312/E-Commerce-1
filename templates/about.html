@@ -1,0 +1,122 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | About Us</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="/"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" alt="no image" width="150px"></a>    
+        </div>
+        <div class="nav_side">
+            <a href="/about">About Us</a>
+            <a href="/services">Services</a>
+            <a href="#">Blogs</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login/Register</a>
+            
+        </div>
+
+    </nav>
+
+    <div class="about">
+        <h2>About Us</h2>
+        <div class="about_content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae deleniti consequuntur magni temporibus voluptatibus amet ea repellat perferendis culpa maxime atque nam cupiditate, sunt tempore quas! Quae mollitia tenetur voluptate. Accusantium numquam itaque natus optio fuga. dolor sit, amet consectetur adipisicing elit. Vitae deleniti consequuntur magni temporibus voluptatibus amet ea repellat perferendis culpa maxime atque nam cupiditate, sunt tempore quas! Quae mollitia tenetur voluptate. Accusantium numquam itaque natus optio fug Quia sequi harum beatae ad nemo soluta et accusamus nam eligendi. Molestias, animi facere.</p>
+        </div>
+        <hr>
+        <h2>OUR MISSION</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore repellat magni obcaecati omnis nulla placeat quia alias praesentium ea, natus, sed inventore mollitia repudiandae, vel tempora itaque quisquam officiis perferendis nostrum consequatur. Deleniti veritatis quos aspernatur tempore adipisci perferendis quaerat autem illum necessitatibus, porro ipsam dicta ullam voluptatem magnam ducimus reprehenderit, blanditiis modi? Sapiente necessitatibus sed accusamus, debitis quisquam asperiores quae aliquid, repellendus, tempore laudantium totam nam optio porro.</p>
+    </div>
+
+
+
+
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name ="submit_sheet"  method="post" >
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email Id"><br>
+                <input type="number" name="Phone Number" placeholder="Phone No."><br>
+                <textarea name="Review" placeholder="Write Your Review" cols="22" rows="5"></textarea><br>
+                <button type="submit">Submit</button>
+                <button type="reset" >Reset</button>
+            </form>
+        </div>
+        </div>
+
+    <footer>
+        <div class="footer_logo">
+            <a href="e-commerce.html"><img src="https://student.1stop.ai/static/media/logo.92dd8b76845bc064a7ab.png" alt="no image" width="150px"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="#">About Us</a>|
+            <a href="#">Blogs</a>|
+            <a href="#">Login</a>|
+            <a href="#">Sign Up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms Of Use</a>|
+            <a href="#">Refund Policy</a>
+        </div>
+        <div class="social" >
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>          
+        </div>
+        <div class="contact">
+            <h3>Contact US</h3>
+            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <hr>
+
+        <p>Copyright &copy; 2021 1stop.All rights reserved </p>
+        
+    </footer>
+
+
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtvPUgZfBE-gWNt0UDMNzC-sj2xq7cQUjSd25RGh0__jkZy7mJvkRwHZ0Yc_-w5fIs/exec'
+    
+    const form = document.forms['submit_sheet']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+         .then(response => alert('Success!'))
+         .catch(error => alert('Error!', error.message))
+         })
+ </script>
+</body>
+</html>
